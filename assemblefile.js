@@ -35,7 +35,7 @@ const app = assemble();
 
 
 let l10nNewKeys = {};
-const l10nDict = require('./translations/en');
+const l10nDict = require('./translations/ru-RU');
 const translateHelper = function(key, val) {
 
 	if (_.has(l10nDict, key)) { return _.get(l10nDict, key); }
@@ -46,6 +46,9 @@ const translateHelper = function(key, val) {
 }
 
 let data = {
+	lang: {
+		code: 'en',
+	},
 	gakeys: (process.env['GAKEYS'] || '').split(/\s+/)
 }
 
@@ -84,11 +87,16 @@ app.task('less', function() {
 
 
 app.task('default', ['less', 'load-assets'], function( ) {
-	return app.src('src/**/index.hbs', {layout: 'default'})
+	return app.src('src/pages/**/index.hbs', {layout: 'default'})
 		.pipe(app.renderFile(data)) //<= render pages with default engine (hbs)
 
+		.pipe(rename(function(p) {
+			let cssName = path.basename(p.dirname);
+			p.basename = cssName ? cssName : (cssUnnamedCounter ++ ).toString();
+		}))
 		.pipe(rename({
-			extname: '.html'
+			extname: '.html',
+			dirname: ''
 		}))
 		.pipe(inline({
 			base: path.join(process.cwd(), 'tmp/inline'),
