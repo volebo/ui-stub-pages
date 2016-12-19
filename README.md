@@ -1,4 +1,4 @@
-# Volebo www-dumbs-ui
+# Volebo ui-stub-pages
 
 Static caps and stubs for Volebo.net site
 
