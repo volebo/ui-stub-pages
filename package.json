@@ -1,0 +1,68 @@
+{
+  "name": "@volebo/www-dumbs-ui",
+  "version": "0.0.1",
+  "description": "Static caps and stubs for Volebo.net site",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc",
+    "test": "tests"
+  },
+  "scripts": {
+    "build": "`npm bin`/assemble",
+    "lint": "`npm bin`/eslint ./"
+  },
+  "VOLEBO-scripts": {
+    "coverage": "`npm bin`/istanbul cover `npm bin`/_mocha",
+    "test": "`npm bin`/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/volebo/www-dumbs-ui.git"
+  },
+  "keywords": [
+    "volebo",
+    "volebo.net"
+  ],
+  "author": {
+    "name": "Volebo",
+    "url": "http://dev.volebo.net"
+  },
+  "contributors": [
+    {
+      "name": "Koryukov Maksim",
+      "email": "maxkoryukov@gmail.com"
+    }
+  ],
+  "os": [
+    "linux"
+  ],
+  "engines": {
+    "node": ">=4.0.0",
+    "npm": ">=3.0.0"
+  },
+  "license": "GPLv3",
+  "bugs": {
+    "url": "https://github.com/volebo/www-dumbs-ui/issues"
+  },
+  "homepage": "https://github.com/volebo/www-dumbs-ui#readme",
+  "devDependencies": {
+    "assemble": "^0.17.1",
+    "bootstrap": "^3.3.7",
+    "bootswatch": "^3.3.7",
+    "dotenv": "^2.0.0",
+    "eslint-config-volebo": "x",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-inline": "github:maxkoryukov/gulp-inline",
+    "gulp-less": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "handlebars": "^4.0.6",
+    "eslint": "3.x",
+    "mocha": "2.x",
+    "lodash": "4.x"
+  },
+  "VOLEBO-Dependencies": {
+    "chai": "3.x",
+    "istanbul": "0.4.x",
+    "supertest": "2.x"
+  }
+}

@@ -1,0 +1,70 @@
+// @import (reference) '~bootstrap/less/bootstrap.less';
+// @import (reference) '~bootswatch/darkly/bootswatch.less';
+// @import (reference) '~bootswatch/darkly/variables.less';
+
+@import (reference) 'bootstrap/less/bootstrap.less';
+@import (reference) 'bootswatch/darkly/bootswatch.less';
+@import (reference) 'bootswatch/darkly/variables.less';
+
+.fa-facebook-square { color: #3b5998; }
+.fa-twitter-square { color: #55acee; }
+.fa-google-plus-square { color: #dd4b39; }
+.fa-linkedin-square { color: #0976b4; }
+.fa-pinterest-square { color: #cc2127; }
+.fa-youtube-square { color: #b31217; }
+.fa-instagram { color: #3f729b; }
+
+svg {
+	width: 100%;
+	height: 100%;
+}
+svg path {
+	fill: #c51a4a;
+}
+
+svg #Layer_2 * {
+	fill-opacity: 0.05;
+}
+
+svg #circle4 {
+	animation: pulse 4s infinite;
+	animation-delay: 0s;
+}
+
+svg #circle3 {
+	animation: pulse 4s infinite;
+	animation-delay: 1s;
+}
+
+svg #circle2 {
+	animation: pulse 4s infinite;
+	animation-delay: 2s;
+}
+
+svg #circle1 {
+	animation: pulse 4s infinite;
+	animation-delay: 3s;
+}
+
+@keyframes pulse {
+	0% {
+		fill-opacity:1;
+	}
+	25% {
+		fill-opacity:0.9;
+	}
+	75% {
+		fill-opacity:0.05;
+	}
+}
+
+@media (max-width: 768px)
+{
+	.vlb-subscribe-input input {
+		height: 46px;
+		padding: 10px 16px;
+		font-size: 18px;
+		line-height: 1.3333333;
+		border-radius: 6px;
+	}
+}
