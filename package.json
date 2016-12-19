@@ -1,5 +1,5 @@
 {
-  "name": "@volebo/www-dumbs-ui",
+  "name": "@volebo/ui-stub-pages",
   "version": "0.0.1",
   "description": "Static caps and stubs for Volebo.net site",
   "main": "index.js",
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/volebo/www-dumbs-ui.git"
+    "url": "git+https://github.com/volebo/ui-stub-pages.git"
   },
   "keywords": [
     "volebo",
@@ -42,23 +42,27 @@
   },
   "license": "GPLv3",
   "bugs": {
-    "url": "https://github.com/volebo/www-dumbs-ui/issues"
+    "url": "https://github.com/volebo/ui-stub-pages/issues"
   },
-  "homepage": "https://github.com/volebo/www-dumbs-ui#readme",
+  "homepage": "https://github.com/volebo/ui-stub-pages#readme",
   "devDependencies": {
     "assemble": "^0.17.1",
     "bootstrap": "^3.3.7",
     "bootswatch": "^3.3.7",
+    "debug": "^2.4.5",
     "dotenv": "^2.0.0",
+    "eslint": "3.x",
     "eslint-config-volebo": "x",
+    "gulp-csso": "^2.0.0",
     "gulp-htmlmin": "^3.0.0",
+    "gulp-if": "^2.0.2",
     "gulp-inline": "github:maxkoryukov/gulp-inline",
     "gulp-less": "^3.3.0",
     "gulp-rename": "^1.2.2",
+    "gulp-size": "^2.1.0",
     "handlebars": "^4.0.6",
-    "eslint": "3.x",
-    "mocha": "2.x",
-    "lodash": "4.x"
+    "lodash": "4.x",
+    "mocha": "2.x"
   },
   "VOLEBO-Dependencies": {
     "chai": "3.x",

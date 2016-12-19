@@ -1,3 +1,28 @@
+{{!--
+Static caps and stubs for Volebo.net site
+
+Copyright (C) 2016  Volebo <volebo.net@gmail.com>
+Copyright (C) 2016  Koryukov Maksim <maxkoryukov@gmail.com>
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+--}}
+
+{{#*inline "HEAD"}}
+	<link href="/development.css" rel="stylesheet"/>
+	<title>{{__ "development.title" ""}}</title>
+{{/inline}}
+
 <div class="container">
 	<div class="row">
 		<div class="col-lg-offset-3 col-lg-6 col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 col-xs-12">
@@ -16,7 +41,7 @@
 				<input type="text" name="_gotcha" style="display:none" />
 				<input type="hidden" name="_subject" value="under-development-subscriber" />
 
-				<div class="vlb-subscribe-input form-group col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
+				<div class="vlb-subscribe-block form-group">
 					<label for="subscribe-_replyto" class="sr-only">{{__ "development.email.label"}}</label>
 					<div class="input-group">
 						<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
@@ -31,14 +56,8 @@
 	</div>
 	<div class="row">
 		<div class="text-center col-md-12">
-			<a href="https://youtube.com/c/volebonet" target="_blank"><i class="fa fa-2x fa-youtube-square" aria-hidden="true"></i></a>
-			<a href="https://plus.google.com/+VoleboNet" target="_blank"><i class="fa fa-2x fa-google-plus-square" aria-hidden="true"></i></a>
+			<a href="https://youtube.com/c/volebonet"    target="_blank"><i aria-hidden="true" class="fa fa-2x fa-youtube-square"></i></a>
+			<a href="https://plus.google.com/+VoleboNet" target="_blank"><i aria-hidden="true" class="fa fa-2x fa-google-plus-square"></i></a>
 		</div>
 	</div>
 </div>
-
-{{#*inline "HEAD"}}
-	<link href="/development.css" rel="stylesheet"/>
-	<title>{{__ "development.title" ""}}</title>
-{{/inline}}
-
