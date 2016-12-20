@@ -12,7 +12,7 @@
     "lint": "`npm bin`/eslint ./"
   },
   "VOLEBO-scripts": {
-    "coverage": "`npm bin`/istanbul cover `npm bin`/_mocha",
+    "coverage": "`npm bin`/istanbul cover `npm bin`/_mocha -- --reporter min",
     "test": "`npm bin`/mocha"
   },
   "repository": {
