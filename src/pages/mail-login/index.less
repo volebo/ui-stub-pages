@@ -1,0 +1,84 @@
+/*
+Static caps and stubs for Volebo.net site
+
+Copyright (C) 2016  Volebo <volebo.net@gmail.com>
+Copyright (C) 2016  Koryukov Maksim <maxkoryukov@gmail.com>
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+@import (reference) 'bootstrap/less/bootstrap.less';
+@import (reference) 'bootswatch/darkly/bootswatch.less';
+@import (reference) 'bootswatch/darkly/variables.less';
+
+@volebo-color: #c51a4a;
+
+.fa-facebook-square { color: #3b5998; }
+.fa-twitter-square { color: #55acee; }
+.fa-google-plus-square { color: #dd4b39; }
+.fa-linkedin-square { color: #0976b4; }
+.fa-pinterest-square { color: #cc2127; }
+.fa-youtube-square { color: #b31217; }
+.fa-instagram { color: #3f729b; }
+
+@keyframes pulse {
+	0% {
+		fill-opacity:1;
+	}
+	25% {
+		fill-opacity:0.9;
+	}
+	75% {
+		fill-opacity:0.05;
+	}
+}
+
+svg {
+	width: 100%;
+	height: 100%;
+
+	path {
+		fill: @volebo-color;
+	}
+
+	#Layer_2 * {
+		fill-opacity: 0.05;
+	}
+
+	#circle4 {
+		animation: pulse 4s infinite;
+		animation-delay: 0s;
+	}
+
+	#circle3 {
+		animation: pulse 4s infinite;
+		animation-delay: 1s;
+	}
+
+	#circle2 {
+		animation: pulse 4s infinite;
+		animation-delay: 2s;
+	}
+
+	#circle1 {
+		animation: pulse 4s infinite;
+		animation-delay: 3s;
+	}
+}
+
+.vlb-subscribe-block {
+	.make-lg-column(8);
+	.make-md-column(10);
+	.make-sm-column(12);
+}
