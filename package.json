@@ -1,6 +1,6 @@
 {
   "name": "@volebo/ui-stub-pages",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Static caps and stubs for Volebo.net site",
   "main": "index.js",
   "directories": {
