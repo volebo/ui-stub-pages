@@ -1,6 +1,18 @@
+# =========================================
+# volebo javascript ignore rules
+#
 # See http://help.github.com/ignore-files/ for more about ignoring files.
+# =========================================
+
+# place per-project settings here
 
 # =========================================
+# common part
+# =========================================
+# PRIVATE files
+.env
+.npmrc
+.node_repl_history
 
 # dependencies
 .npm
@@ -9,37 +21,16 @@
 
 # compiled output
 /dist
-
-# it is a LOCAL file only!
-.env
+/tmp
+/build
 
 # Coverage directory used by tools like istanbul
 /coverage
 /lib-cov
 
-
-# Logs
-/libpeerconnection.log
-logs
-*.log
 npm-debug.log*
+/logs
+*.log
 testem.log
-
-# Runtime data
-/connect.lock
-pids
-*.pid
-*.seed
-/tmp
-/.sass-cache
-
-# node-waf configuration
-.lock-wscript
-
-# Compiled binary addons (http://nodejs.org/api/addons.html)
-build/Release
-
-# Optional REPL history
-.node_repl_history
 
 # =========================================
